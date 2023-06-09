@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id e Class</title>
+
+    <!-- A tag style serve para codificar o CSS-->
+    <style>
+        h1 {
+            background: red;
+        }
+
+        p {
+            background: lightgreen;
+        }
+
+        #cabecalho-dois {
+            background: lightpink;
+        }
+
+        .fundo-azul {
+            background: lightskyblue;
+        }
+
+        .bold{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho">
+        O id é um atributo identificador de uma tag, os ids nunca podem se repetir. O id é o atributo
+        que tem a maior especificidade no CSS (mais forte do que a classe)
+    </h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">
+        As classes podem se repetir, e podemos colocar mais de uma classe na mesma tag.
+    </h1>
+    <p>Este parágrafo testa a <b> tag bold que deixa</b> o texto em negrito</p>
+    <p class="fundo-azul"><b>Este paragrafo testa a seleção de classes no CSS</b></p>
+    <p>Podemos fazer a <b class="bold">mesma modificação em varios elementos</b>que são da mesma classe</p>
+    <p>Podemos fazer a <b class="bold">mesma modificação em varios elementos</b>que são da mesma classe</p>
+    <p>Podemos fazer a <b class="bold">mesma modificação em varios elementos</b>que são da mesma classe</p>
+    <p>Podemos fazer a <b class="bold">mesma modificação em varios elementos</b>que são da mesma classe</p>
+    
+</body>
+
+</html>

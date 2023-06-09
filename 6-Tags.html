@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+
+    <!--Aqui você pode alterar o tamanho das imagens que são da mesma classe entre outras configurações-->
+    <style>
+        .hora-de-aventura {
+            width: 900px;
+            height: 590px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <h1>Cabeçalho</h1>
+
+    <!--Os cabeçalhos não podem ter tags filhas-->
+    <p>
+        Tags para deixar o texto semântico:<br>
+        Normalmente é possível que as tags do tipo "bloco" possuam outras tags dentro delas (tags filhas)
+        O bloco usa a largura inteira do elemento para quebrar linhas<br>
+        Tags para texto (p): b e strong deixam o texto em negrito, porém strong significa deixar a palavra
+        mais forte para ser lida. <br>
+        <strong>Strong </strong>é um estado lógico e <b>Bold </b>é um estado fisico.<br>
+        A tag i serve para escrever em <i>italico </i> e a tag <em>emfase (em) </em>também deixa o texto
+        em italico porém é para dar emfase em uma palavra no estado lógico.<br>
+        O estado lógico é o momento em que o leitor de texto lê a tela do dispositivo.<br>
+
+        A tag a ganha um href (a href) e serve para criar links. Dentro do href você insere um arquivo .html
+        ou link. Exemplo: <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">Clique aqui</a><br>
+
+        A tag del serve para escrever o texto <del>tachado</del>. A tag ins é insert e faz o <ins>sublinhado
+        </ins> na palavra.<br> O sentido é que <del>del é para deletar</del> um texto e <ins> ins é para
+            inserir um texto.</ins><br>
+
+        A tag img serve para colocar imagens de arquivo ou link externo(img scr alt), é possível adicionar
+        link à imagem. Exemplo:<br>
+
+        <!--é possível adicionar link à imagem-->
+        <a href="https://www.hbomax.com/br/pt/series/urn:hbo:series:GXmAuwAxxXp4_wwEAACh0" target="_blank">
+            <img class="hora-de-aventura" src="https://japaneza.files.wordpress.com/2016/04/adventureimg2.png"
+                alt="Hora de aventura" width="900" height="590">
+        </a>
+
+        <p>
+            <!--As tags a seguir são filhas da tag p (paragrafo)-->
+            A tag del serve para <del>deletar </del>uma parte do texto, a tag ins serve para <ins>inserir</ins> um
+            texto.<br> A tag s serve para <s>tachar</s> um texto e a tag u serve para <u>sublinhar</u> o
+            texto.<br>
+        </p>
+        <h2>
+            Você quer assistir Hora de Aventura? Então
+            <a href="https://www.hbomax.com/br/pt/series/urn:hbo:series:GXmAuwAxxXp4_wwEAACh0" target="_blank">clique
+                aqui!</a>
+        </h2>
+
+        <img class="hora-de-aventura" src="https://th.bing.com/th/id/OIP.rUDWDZ2CFDKYYsbX0kFDaQHaEo?pid=ImgDet&rs=1"
+            alt="hora-de-aventura">
+
+        <p>
+            <br>A tag sup serve para fazer um número elevado, por exemplo 2^2 = 2<sup>2</sup> ou H<sub>2</sub>O. A tag q
+            coloca o texto <q>entre aspas</q> ou para fazer a citação de um texto. Exemplo: <q
+                cite="https://pt.wikipedia.org/wiki/%C3%81gua">H<sub>2</sub>O</q><br>
+        </p>
+
+        <!--As próximas tags não podem ser inclusas no paragrafo porque são inlines-->
+
+        <blockquote cite="https://pt.wikipedia.org/wiki/%C3%81gua">
+            O blockquote serve para fazer um bloco de citação.<br>O paragrafo não pode ter um bloco, mas o
+            bloco pode ter um paragrafo
+        </blockquote>
+
+        <!-- a tag hr é do tipo bloco e serve para criar um espaço em branco entre dois paragrafos-->
+        <p>
+            A tag code serve para você escrever um código. Exemplo: <code>SELECT COUNT (*) FROM Nomes WHERE
+                Notas >= 8;</code>. Porém em alguns casos o texto é pré formatado e precisa das quebras de linha,
+            então usa-se a tag bloco pre. Exemplo:<br>
+        </p>
+
+        <pre>
+            <code>
+                --Banco de Dados: Sistema Escolar
+
+                --Tabela Cursos
+                create table Cursos
+                ( CodCurso   int,
+                  Descricao  varchar (30),
+                  constraint pk_Cursos primary key (CodCurso) );
+            </code>   
+        </pre>
+
+        <h2>As tags Spam e div são conteiners genéricos.</h2>
+        <p>Spam é um conteiner genérico inline
+            (quando o texto não é semantico) pode ser usada no paragrafo.</p>
+
+        <spam class="letra-colorida">Exemplo spam</spam>
+
+        <div style="color: darkred;">A div é uma tag generica do tipo bloco que não é inline</div>
+</body>
+
+</html>

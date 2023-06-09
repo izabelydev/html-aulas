@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--form é um bloco e ocupa toda a largura da tela // action é para descrever para onde mandar o formulário-->
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1>Parte 1</h1>
+            <p>Formulário</p>
+
+            <fieldset>
+                <legend>Descrição</legend>
+                <input type="text">
+            </fieldset>
+        </section>
+
+        <h2>Parte 2</h2>
+        <p>
+            <label>Nome:
+                <input type="text" id="nome" name="nomes" placeholder="Seu nome" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="emails" value="exemplo@exemplo.com">
+            <!-- para desabilidar a interação com o input use "desable" ou "readonly"-->
+        </p>
+
+        <p>
+            <h3>Selecione vários</h3>
+            <label for="junior">Sou dev Junior</label>
+            <input type="checkbox" id="junior" name="devs" value="junior" checked><br>
+            <label for="pleno">Sou dev Pleno</label>
+            <input type="checkbox" id="pleno" name="devs" value="pleno"><br>
+            <label for="senior">Sou dev Sênior</label>
+            <input type="checkbox" id="senior" name="devs" value="senior">
+        </p>
+
+        <p>
+            <h3>Selecione apenas um</h3>
+            <p>Gênero:</p>
+            <label for="fem">Feminino</label>
+            <input type="radio" id="fem" name="genero" value="feminino" checked><br>
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" name="genero" value="masculino"><br>
+        </p>
+
+        <h2>Parte 3</h2>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="ex.: email@email.com">
+        </p>
+
+        <p>
+            <label for="foto">Sua foto</label>
+            <input type="file" id="foto" name="fotos" accept=".png, .svg, image/*" multiple>
+            <!--multiple é para selecionar vários arquivos-->
+        </p>
+
+        <p>
+            <label for="idade">Sua idade</label>
+            <input type="number" id="idade" name="idades" placeholder="12" min="6" max="100" step="2">
+        </p>
+
+        <p>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="dates" value="2003-08-22">
+        </p>
+
+        <p>
+            <label for="datetime">Datetime</label>
+            <input type="datetime" id="datetime" name="datetimes" value="2003-08-22">
+        </p>
+
+        <p>
+            <label for="dt-local">Datetime-local</label>
+            <input type="datetime-local" id="dt-local" name="dt-locais" value="2023-06-06T19:07">
+        </p>
+
+        <p>
+            <label for="time">Time</label>
+            <input type="time" id="time" name="hora" value="20:00">
+        </p>
+
+        <p>
+            <label for="color">Cor</label>
+            <input type="color" id="color" name="cor" value="#003d66">
+        </p>
+
+        <h2>Parte 4</h2>
+        <p>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="senhas" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="range">Range</label>
+            <input type="range" id="range" name="barrinha" min="0" max="50" step="10" list="lista">
+
+            <datalist id="lista">
+                <option value="0">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="100">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="url">Digite a url</label>
+            <input type="url" id="url" name="urls" placeholder="url">
+        </p>
+
+        <p>
+            <label for="Select">Selecione uma opção</label>
+            <select id="select" name="select">
+                <optgroup label="Opções">
+                    <option value="opc-1" label="Opção 1">
+                    <option value="opc-2" label="Opção 2">
+                    <option value="opc-3" label="Opção 3">
+                    <option value="opc-4" label="Opção 4">
+                    <option value="opc-5" label="Opção 5">
+                </optgroup>
+
+                <optgroup label="Outras opções">
+                    <option value="opc-6" label="Opção 6" disabled>
+                    <option value="opc-7" label="Opção 7" disabled>
+                    <option value="opc-8" label="Opção 8" disabled>
+                    <option value="opc-9" label="Opção 9">
+                    <option value="opc-10" label="Opção 10">
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Textarea</label><br>
+            <textarea rows="4" cols="8"></textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+</body>
+
+</html>
