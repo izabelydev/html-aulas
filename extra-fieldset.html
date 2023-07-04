@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        fieldset {
+            width: 20px;
+            margin: 8px;
+            border-radius: 5px;
+            border: 1px solid red;
+        }
+        
+        input {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="#">
+            <label for="name">Nome</label>
+            <input name="name" type="text">
+            <label for="age">Idade</label>
+            <input name="age" type="number">
+            <label for="data">Data Nasc.</label>
+            <input name="data" type="date">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <form action="#">
+            <label for="number-phone">Celular</label>
+            <input name="number-phone" type="number">
+            <label for="email">E-mail</label>
+            <input name="email" type="email">
+        </form>
+    </fieldset>
+</body>
+</html>
